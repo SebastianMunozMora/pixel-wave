@@ -4,7 +4,7 @@
   <div class="page-articles">
     <div class="main-section">
       <div class="vertical">
-        <%= render partial: "common/article-partial-list", locals: { articles: @articles } %>
+        <%= render partial: "common/article-partial-list", locals: { articles: @articleSearch ? @articleSearch : @articles.slice(0, 5) } %>
       </div>
     </div>
 
@@ -12,16 +12,13 @@
       <% @categories.each do |category| %>
         <div class="<%= "category category-heading category-heading-#{category.name}" %>">
           <%= link_to "#{category.name}", "/category/#{category.name}" %>
-        </div>
+          </div>
         <div class="vertical">
-          <% category.articles.each do |article| %>
+          <% category.articles.slice(0,2).each do |article| %>
             <%= render partial: "common/thumb", locals: { article: article, category: false } %>
           <% end %>
         </div>
       <% end %>
-    </div>
-    <div class="search-section">
-      <%= render partial: "common/article-partial-list", locals: { articles: @articleSearch } if @articleSearch %>
     </div>
   </div>
 </div>

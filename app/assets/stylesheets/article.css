@@ -9,6 +9,7 @@
     padding: 5px;
     background-color: white;
     justify-items: center;
+    margin: 15px;
 }
 
 .image-box-thumb {
@@ -60,7 +61,7 @@
 .top-image {
     display: block;
     object-fit: cover;
-    max-width: 300px;
+    max-width: 100%;
 }
 
 a{
