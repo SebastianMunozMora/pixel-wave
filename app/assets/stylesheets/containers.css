@@ -25,6 +25,10 @@
     border-right: 2px solid blue;
 }
 
+.category-tab .category:last-child {
+    border-right: none;
+}
+
 [class*="category-heading"] {
     color: black;
 }
