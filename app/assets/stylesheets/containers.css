@@ -13,7 +13,6 @@
         text-align: center;
         text-transform: capitalize;
         font-size: 1.5rem;
-        width: 100%;
     }
 }
 
@@ -31,6 +30,8 @@
 
 [class*="category-heading"] {
     color: black;
+    width: 200px;
+    margin-bottom: 5px;
 }
 
 .category-heading-lifestyle:hover {

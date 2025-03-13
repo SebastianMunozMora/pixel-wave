@@ -1,16 +1,15 @@
 .full {
-    .article-heading {
-
-    }
 
     .author-box {
         margin-top: -40px;
     }
 
     .date-category-box {
-        margin-left: 15px;
         justify-self: left;
         .date-field {
+            a {
+                font-weight: lighter;
+            }
             display: inline-block;
         }
 
@@ -31,6 +30,14 @@
         border-bottom: 5px solid transparent;
         
         border-left: 10px solid;
+    }
+
+    .date-category-box {
+        margin-bottom: 15px;
+    }
+
+    .article-heading {
+        margin-bottom: 15px;
     }
 }
 
