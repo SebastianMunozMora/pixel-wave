@@ -1,6 +1,17 @@
+<style>
+    .single-article {
+        max-width: 700px;
+        justify-self: center;
+
+        .article-heading {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+    }
+</style>
 <script src="https://lds-img.finalfantasyxiv.com/pc/global/js/eorzeadb/loader.js?v3"></script>
 
-<div id="<%= dom_id article %>" class="ff-article">
+<div id="<%= dom_id article %>" class="ff-article single-article">
 
     <div class="article-heading">
         <%= link_to "#{article.title}", article %>
