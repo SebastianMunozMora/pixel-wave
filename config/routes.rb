@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get "featured/index"
+  get "featured/andyoz"
+  get "featured/index"
+  get "featured/andy-oz"
+  devise_for :users
   get 'date/index'
   get 'date/latest'
   get 'date/oldest'
