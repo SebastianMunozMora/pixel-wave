@@ -40,6 +40,7 @@
 
 .categories-section .category-heading-lifestyle {
     border-bottom: 2px solid green;
+    color: green;
 }
 
 .category-heading-tech:hover {
@@ -48,6 +49,7 @@
 
 .categories-section .category-heading-tech {
     border-bottom: 2px solid darkblue;
+    color: darkblue;
 }
 
 .category-heading-video:hover {
@@ -64,6 +66,7 @@
 
 .categories-section .category-heading-books {
     border-bottom: 2px solid brown;
+    color: brown;
 }
 
 .category-heading-comics:hover {
@@ -72,6 +75,7 @@
 
 .categories-section .category-heading-comics {
     border-bottom: 2px solid darkred;
+    color: darkred;
 }
 
 .category-heading-entertainment:hover {
@@ -80,6 +84,7 @@
 
 .categories-section .category-heading-entertainment {
     border-bottom: 2px solid darkmagenta;
+    color: darkmagenta;
 }
 
 .category-heading-movies:hover {
@@ -88,6 +93,7 @@
 
 .categories-section .category-heading-movies {
     border-bottom: 2px solid darkcyan;
+    color: darkcyan
 }
 
 .category-heading-video-games:hover {
@@ -96,6 +102,7 @@
 
 .categories-section .category-heading-video-games {
     border-bottom: 2px solid rgb(36, 81, 172);
+    color: rgb(36, 81, 172);
 }
 
 .category-heading-science:hover {
@@ -104,6 +111,7 @@
 
 .categories-section .category-heading-science {
     border-bottom: 2px solid steelblue;
+    color: steelblue;
 }
 
 .main-section {
