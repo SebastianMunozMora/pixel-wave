@@ -17,10 +17,14 @@
         <%= link_to "#{article.title}", article %>
     </div>
 
-    <div class="image-box">
-        <%= image_tag(article.image, :class => "top-image") %>
-        <h5   class="caption"><%= fa_icon "camera-retro" %> the latest fantasy book</h5>
-    </div>
+    <%= @article.content %>
+
+    <% if article.image.attached? %>
+        <div class="image-box">
+            <%= image_tag(article.image, :class => "top-image") %>
+            <h5 class="caption"><%= fa_icon "camera-retro" %> the latest fantasy book</h5>
+        </div>
+    <% end %>
 
     <div class="author-box">
         <%= link_to "#{article.author.name}", article.author %>

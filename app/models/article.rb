@@ -10,4 +10,6 @@ class Article < ApplicationRecord
         where("title LIKE ? OR body LIKE ?", 
             "%#{term}%", "%#{term}%") 
         }
+
+    has_rich_text :content
 end
