@@ -24,8 +24,6 @@
         </div>
     <% end %>
 
-    <%= @article.content %>
-
     <div class="author-box">
         <% if article.author.avatar.attached? %>
             <div class="">
@@ -34,6 +32,8 @@
         <% end %>
         <%= link_to "#{article.author.name}", article.author %>
     </div>
+
+    <%= @article.content %>
 
     <div class="article-body">
         <%= article.body.html_safe %>
