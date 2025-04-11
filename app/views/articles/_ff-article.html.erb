@@ -27,6 +27,11 @@
     <%= @article.content %>
 
     <div class="author-box">
+        <% if article.author.avatar.attached? %>
+            <div class="">
+                <%= image_tag(article.author.avatar, :class => "author-image", :style=>"width:50px; height: 50px") %>
+            </div>
+        <% end %>
         <%= link_to "#{article.author.name}", article.author %>
     </div>
 

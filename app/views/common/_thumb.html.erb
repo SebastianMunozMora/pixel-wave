@@ -1,7 +1,10 @@
 <article id="<%= dom_id article %>" class="thumb">
-  <div class="image-box">
-    <%= image_tag(article.image, :class => "top-image", :size => '260x180') %>
-  </div>
+
+  <% if article.image.attached? %>
+    <div class="image-box">
+      <%= image_tag(article.image, :class => "top-image", :size => '260x180') %>
+    </div>
+  <% end %>
 
   <div class="text-box">
     <div class="article-heading">
