@@ -9,7 +9,7 @@
           <%= link_to "#{category.name}", "/category/#{category.name}" %>
           </div>
         <div class="vertical">
-          <% category.articles.slice(0,2).each do |article| %>
+          <% category.articles.order(created_at: :desc).slice(0,2).each do |article| %>
             <%= render partial: "common/thumb", locals: { article: article, category: false } %>
           <% end %>
         </div>
