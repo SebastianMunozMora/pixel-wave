@@ -41,6 +41,14 @@ a {
     border-image-slice: 1;
 }
 
+@media (max-width: 768px) { /* Target devices with a width of 768px or less */
+    .top-banner, .search-bar {
+        display: block; /* Forces the section to stack vertically */
+        width: 100%; /* Ensures it takes up the full width */
+        padding: 2px;
+    }
+}
+
 .page {
     background-size: 40px 40px;
     background-position: -19px -19px;

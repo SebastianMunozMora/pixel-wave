@@ -1,10 +1,25 @@
 .category-tab {
     padding: 10px;
-    margin: 5px;
+    margin: 2px;
     .category {
         font-size: 1.7rem;
         text-transform: capitalize;
         display: inline;
-        padding: 5px;
+        padding: 2px;
+    }
+}
+
+@media (max-width: 768px) { /* Target devices with a width of 768px or less */
+    .category-tab {
+        display: flex; /* Use flexbox to align items horizontally */
+        max-width: 300px;
+        overflow-x: auto; /* Enable horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS devices */
+        gap: 10px; /* Add spacing between categories */
+    }
+
+    .category-tab .category-heading {
+        flex: 0 0 auto; /* Prevent items from shrinking */
+        text-align: center;
     }
 }
