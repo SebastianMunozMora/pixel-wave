@@ -57,3 +57,7 @@ a {
 .page-articles {
     display: inline-flex;
 }
+
+.page {
+    justify-self: center;
+}
