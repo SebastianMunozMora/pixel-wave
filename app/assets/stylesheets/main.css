@@ -41,11 +41,15 @@ a {
     border-image-slice: 1;
 }
 
-@media (max-width: 768px) { /* Target devices with a width of 768px or less */
+@media (width <= 900px) {
     .top-banner, .search-bar {
-        display: block; /* Forces the section to stack vertically */
-        width: 100%; /* Ensures it takes up the full width */
+        display: block;
+        width: 100%;
         padding: 2px;
+    }
+
+    .search-bar {
+        display: none;
     }
 }
 
@@ -56,6 +60,11 @@ a {
 
 .page-articles {
     display: inline-flex;
+
+    @media (width <= 900px) {
+        flex-direction: column-reverse;
+        justify-self: center;
+    }
 }
 
 .page {
