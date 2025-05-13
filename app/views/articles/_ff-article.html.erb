@@ -12,6 +12,8 @@
 
 <% content_for :head do %>
     <%= tag.meta property: "og:image", content: "https://pixelwave.blog#{url_for(article.image)}" %>
+    <%= tag.meta name: "title", content: article.title %>
+    <%= tag.meta name: "description", content: truncate(article.body, length: 150) %>
 <% end %>
 
 <script src="https://lds-img.finalfantasyxiv.com/pc/global/js/eorzeadb/loader.js?v3"></script>
