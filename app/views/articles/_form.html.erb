@@ -31,6 +31,11 @@
     <%= form.file_field :image %>
   </div>
 
+  <div>
+    <%= form.label :image_caption, "Image Caption", style: "display: block" %>
+    <%= form.text_field :image_caption %>
+</div>
+
   <%= form.select :author_id, options_from_collection_for_select(Author.all, :id, :name) %>
 
   <%= form.select :category_id, options_from_collection_for_select(Category.all, :id, :name) %>
