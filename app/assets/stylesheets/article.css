@@ -39,6 +39,11 @@
     text-align: justify;
 }
 
+.single-article .article-body{
+    font-style: italic;
+    font-size: 15px;
+}
+
 .article-body {
     max-width: 100% !important;
     text-align: justify;
@@ -47,10 +52,6 @@
     overflow-y: scroll;
     text-transform: none;
     margin-top: 15px;
-    &.single-article {
-        font-style: italic;
-        font-size: 15px;
-    }
 }
 
 .caption {
