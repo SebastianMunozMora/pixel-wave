@@ -70,3 +70,7 @@ a {
 .page {
     justify-self: center;
 }
+
+i {
+    margin: 5px;
+}

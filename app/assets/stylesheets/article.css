@@ -47,7 +47,10 @@
     overflow-y: scroll;
     text-transform: none;
     margin-top: 15px;
-    font-style: italic;
+    &.single-article {
+        font-style: italic;
+        font-size: 15px;
+    }
 }
 
 .caption {
