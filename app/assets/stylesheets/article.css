@@ -74,3 +74,54 @@
 a {
     font-weight: bold;
 }
+
+h3 {
+    margin: 15px 0;
+}
+
+span {
+    &.tomato {
+        color: rgba(255, 99, 71, 1);
+    }
+
+    &.medium-sea-green {
+        color: rgba(60, 179, 113, 1);
+    }
+
+    &.steel-blue {
+        color: rgba(70, 130, 180, 1);
+    }
+    
+    &.goldenrod-yellow {
+        color: rgba(255, 204, 0, 1);
+    }
+
+    &.dark-orchid {
+        color: rgba(153, 50, 204, 1);
+    }
+
+    &.khaki {
+        color: rgba(240, 230, 140, 1);
+    }
+
+    &.green {
+        color: rgba(0, 128, 0, 1);
+    }
+
+    &.organge {
+        color: rgba(255, 165, 0, 1);
+    }
+
+    &.purple {
+        color: rgba(128, 0, 128, 1);
+    }
+
+    &.semi-transparent-black {
+        color: rgba(0, 0, 0, 0.7);
+    }
+}
+
+iframe {
+    width: 100%;
+    height: 400px;
+}
