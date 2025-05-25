@@ -40,7 +40,7 @@
         <%= link_to "#{article.author.name}", article.author %>
     </div>
 
-    <%= @article.content %>
+    <%= render_html @article.content %>
 
     <div class="article-body">
         <%= article.body.html_safe %>
