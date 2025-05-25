@@ -74,3 +74,9 @@ a {
 i {
     margin: 5px;
 }
+
+.search-form {
+    @media (width <= 900px) {
+        display: none;
+    }
+}
