@@ -145,7 +145,28 @@
     width: 33%;
 }
 
-.search-form {
+
+form.search-form {
+    align-self: center;
+    display: flex;
+    background: lightgray;
+    border-radius: 2px;
+    border: 1px solid grey;
+    height: fit-content;
+    padding: 2px;
+    i {
+        font-size: 20px;
+    }
+    button {
+        border: none;
+        border-left: 1px solid grey;
+    }
+    input {
+        background: lightgray;
+        border: none;
+        margin: 0px;
+    }
+
     height: 50%;
     .categories-section.category-list-view {
         height: 100%;
@@ -162,7 +183,6 @@
 }
 
 footer {
-    padding: 15px;
     border-top: 5px solid transparent;
     border-image: linear-gradient(90deg, rgba(36, 27, 0, 1) 0%, rgba(222, 152, 63, 1) 22%, rgb(145, 145, 145) 91%);
     border-image-slice: 1;
