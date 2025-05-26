@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: %i[ show edit update destroy ]
+  before_action :require_password, only: [:edit, :update, :destroy, :create, :new]
 
   # GET /articles or /articles.json
   def index
@@ -69,6 +70,13 @@ class ArticlesController < ApplicationController
   end
 
   private
+    def require_password
+      known_password = "ParisSnakeEater" # Replace with your desired password
+      unless params[:password] == known_password
+        redirect_to articles_path, alert: "You must provide the correct password to perform this action."
+      end
+    end
+  
     # Use callbacks to share common setup or constraints between actions.
     def set_article
       @article = Article.find(params[:id])
