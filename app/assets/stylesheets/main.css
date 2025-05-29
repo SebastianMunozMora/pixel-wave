@@ -26,6 +26,7 @@ a {
     font-size: 2.5rem;
     margin-bottom: 0.5rem;
     justify-items: center;
+    justify-content: center;
     color: rgb(255, 255, 255);
     width: 100%;
     padding: 15px;
