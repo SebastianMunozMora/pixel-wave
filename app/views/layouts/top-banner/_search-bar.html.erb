@@ -1,31 +1,9 @@
-<style>
-    form.search-form {
-        align-self: center;
-        display: flex;
-        background: lightgray;
-        border-radius: 2px;
-        border: 1px solid grey;
-        height: fit-content;
-        padding: 2px;
-        i {
-            font-size: 20px;
-        }
-        button {
-            border: none;
-            border-left: 1px solid grey;
-        }
-        input {
-            background: lightgray;
-            border: none;
-            margin: 0px;
-        }   
-    }
-</style>
 
-
-<%= form_tag(url_for(only_path: false), method: :get, :class => 'search-form') do %>
-    <%= text_field_tag(:q, nil, placeholder: '', onkeypress: "if(event.keyCode == 13) { this.form.submit(); }") %>
-    <button type="submit">
-        <%= fa_icon "search" %>
-    </button>
-<% end %>
+<div class="search-bar">
+    <%= form_tag(url_for(only_path: false), method: :get, :class => 'search-form') do %>
+        <%= text_field_tag(:q, nil, placeholder: '', onkeypress: "if(event.keyCode == 13) { this.form.submit(); }") %>
+        <button type="submit">
+            <%= fa_icon "search" %>
+        </button>
+    <% end %>
+</div>

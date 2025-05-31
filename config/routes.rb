@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get "templates/index"
+  get "templates/minimalist"
+  get "templates/vibrant"
+  get "templates/elegant"
   get "featured/index"
   get "featured/andyoz"
   get "featured/index"

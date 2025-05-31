@@ -1,0 +1,35 @@
+/* Elegant and Serif Style */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Georgia', serif; /* Classic serif font */
+    color: #2d2d2d; /* Dark grey for text */
+    margin-top: 1.2em;
+    margin-bottom: 0.6em;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    color: #1a1a1a; /* Darker for emphasis */
+    border-bottom: 2px solid #ccc; /* Subtle underline */
+    padding-bottom: 0.3em;
+}
+
+h2 {
+    font-size: 2.4em;
+    color: #333;
+    font-style: italic; /* Adds elegance */
+}
+
+h3 {
+    font-size: 2em;
+    color: #555;
+}
+
+h4, h5, h6 {
+    font-size: 1.6em;
+    color: #777;
+    text-transform: uppercase; /* Adds formality */
+    letter-spacing: 0.05em;
+}

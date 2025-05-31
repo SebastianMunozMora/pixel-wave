@@ -1,0 +1,63 @@
+/* --- Global Styles for All Headings --- */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arial', sans-serif; /* Choose a suitable font */
+    color: #333; /* Dark grey for good contrast */
+    margin-top: 1.5em;    /* Space above heading */
+    margin-bottom: 0.5em; /* Space below heading */
+    line-height: 1.2;     /* Slightly tighter line-height for headings */
+    font-weight: bold;    /* Most headings are bold by default */
+}
+
+/* --- Specific Styles for Each Heading Level --- */
+
+/* H1: Main document title */
+h1 {
+    font-size: 2.5em; /* Larger font size */ç
+    text-align: center; /* Often centered for main title */
+    margin-bottom: 0.8em; /* More space below the main title */
+    color: #1a1a1a; /* Even darker for emphasis */
+}
+
+/* H2: Major section titles */
+h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #eee; /* Subtle underline for separation */
+    padding-bottom: 0.2em;
+    color: #222;
+}
+
+/* H3: Sub-section titles */
+h3 {
+    font-size: 1.5em;
+    color: #444;
+}
+
+/* H4: Further sub-divisions */
+h4 {
+    font-size: 1.2em;
+    font-style: italic; /* Can add slight distinction */
+    color: #555;
+}
+
+/* H5: Minor headings */
+h5 {
+    font-size: 1em; /* Often similar to body text size */
+    font-weight: bold;
+    color: #666;
+}
+
+/* H6: Smallest headings (rarely used for main content) */
+h6 {
+    font-size: 0.9em;
+    font-weight: normal; /* Can be normal or slightly bold */
+    text-transform: uppercase; /* Example: use for very specific labels */
+    letter-spacing: 0.05em;
+    color: #777;
+}
+
+/* --- Example of how to reset default browser styles (optional but recommended) --- */
+/* You might include this in a global reset or normalize.css */
+body {
+    margin: 0;
+    padding: 0;
+}
