@@ -1,24 +1,48 @@
-<% if false %>
-  <div id="<%= dom_id article %>">
+<style>
+    .single-article {
+        max-width: 700px;
+        justify-self: center;
 
-    <div class="article-heading">
-      <%= link_to "#{article.title}", article %>
-    </div>
+        .article-heading {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+    }
+</style>
 
-    <div class="image-box">
-      <%= image_tag(article.image, :class => "top-image") %>
-      <h5   class="caption"><%= fa_icon "camera-retro" %> the latest fantasy book</h5>
-    </div>
-
-
-    <div class="author-box">
-      <%= link_to "#{article.author.name}", article.author %>
-    </div>
-
-    <div class="article-body">
-      <%= article.body %>
-    </div>
-  </div>
+<% content_for :head do %>
+    <%= tag.meta property: "og:image", content: "https://pixelwave.blog#{url_for(article.image)}" %>
+    <%= tag.meta name: "title", content: article.title %>
+    <%= tag.meta name: "description", content: truncate(article.body, length: 150) %>
 <% end %>
 
-<%= render partial: "ff-article", locals: { article: article } %>
+<script src="https://lds-img.finalfantasyxiv.com/pc/global/js/eorzeadb/loader.js?v3"></script>
+
+<div id="<%= dom_id article %>" class="ff-article single-article">
+
+    <div class="article-heading">
+        <%= link_to "#{article.title}", article %>
+    </div>
+
+    <% if article.image.attached? %>
+        <div class="image-box">
+            <%= image_tag(article.image, :class => "top-image") %>
+            <h6 class="caption"><%= fa_icon "camera-retro" %><%= article.image_caption %></h6>
+        </div>
+    <% end %>
+
+    <div class="author-box">
+        <% if article.author.avatar.attached? %>
+            <div class="">
+                <%= image_tag(article.author.avatar, :class => "author-image", :style=>"width:50px; height: 50px") %>
+            </div>
+        <% end %>
+        <%= link_to "#{article.author.name}", article.author %>
+    </div>
+
+    <%= render_html @article.content %>
+
+    <div class="article-body">
+        <%= article.body %>
+    </div>
+</div>

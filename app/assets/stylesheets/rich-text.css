@@ -12,7 +12,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* H1: Main document title */
 h1 {
-    font-size: 2.5em; /* Larger font size */ç
+    font-size: 2.5em; /* Larger font size */
     text-align: center; /* Often centered for main title */
     margin-bottom: 0.8em; /* More space below the main title */
     color: #1a1a1a; /* Even darker for emphasis */
