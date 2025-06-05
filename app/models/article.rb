@@ -13,4 +13,9 @@ class Article < ApplicationRecord
         }
 
     has_rich_text :content
+
+    # Ensure the title is URL-friendly
+    def to_param
+        "#{id}-#{title.parameterize}"
+    end
 end
