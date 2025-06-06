@@ -5,7 +5,7 @@
     </p>
 
     <p>
-      <%= image_tag(author.avatar, :style=>"width:150px; height: 150px") if author.avatar  %>
+      <%= image_tag(author.avatar, :style=>"width:150px; height: 150px", alt: author.name || "Author image") if author.avatar  %>
     </p>
 
     <p class="author-contact-info">

@@ -2,7 +2,7 @@
 
   <% if article.image.attached? %>
     <div class="image-box">
-      <%= image_tag(article.image, :class => "top-image", :size => '260x180') %>
+      <%= image_tag(article.image, :class => "top-image", :size => '260x180', alt: article.image_caption || article.title ||"Article image") %>
     </div>
   <% end %>
 

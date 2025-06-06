@@ -2,7 +2,7 @@
 
     <% if article.image.attached? %>
         <div class="image-box">
-            <%= image_tag(article.image, :class => "top-image", :size => '438x438') %>
+            <%= image_tag(article.image, :class => "top-image", :size => '438x438', alt: article.image_caption || article.title || "Article Image") %>
             <h6 class="caption"><%= fa_icon "camera-retro" %><%= article.image_caption || "" %></h6>
         </div>
     <% end %>
