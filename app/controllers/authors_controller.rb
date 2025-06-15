@@ -1,5 +1,7 @@
 class AuthorsController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_author, only: %i[ show edit update destroy ]
+  before_action :require_admin_or_editor, only: %i[new create edit update destroy]
 
   # GET /authors or /authors.json
   def index
@@ -66,5 +68,12 @@ class AuthorsController < ApplicationController
     # Only allow a list of trusted parameters through.
     def author_params
       params.require(:author).permit(:name, :contact, :description, :avatar)
+    end
+
+    # Ensure only admins or editors can perform certain actions
+    def require_admin_or_editor
+      unless current_user.admin? || current_user.editor?
+        redirect_to root_path, alert: "You are not authorized to perform this action."
+      end
     end
 end

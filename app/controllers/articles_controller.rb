@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
+  before_action :authenticate_user!
   before_action :set_article, only: %i[ show edit update destroy ]
-  before_action :require_password, only: [:edit, :update, :destroy, :create, :new]
+  before_action :require_admin_or_editor, only: %i[new create edit update destroy]
 
   # GET /articles or /articles.json
   def index
@@ -70,6 +71,12 @@ class ArticlesController < ApplicationController
   end
 
   private
+    def require_admin_or_editor
+      unless current_user.admin? || current_user.editor?
+        redirect_to root_path, alert: "You are not authorized to perform this action."
+      end
+    end
+
     def require_password
       known_password = "ParisSnakeEater" # Replace with your desired password
       unless params[:password] == known_password
