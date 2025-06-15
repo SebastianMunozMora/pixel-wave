@@ -1,7 +1,7 @@
 class MainPageController < ApplicationController
   def index
     @term = params[:q]
-    @articles = Article.order(created_at: :desc)
+    @articles = Article.visible.order(created_at: :desc)
     @networks = {
       "LinkedIn" => "https://www.linkedin.com/in/sebastian-munoz-mora-70799863/",
       "Facebook" => "https://www.facebook.com/SebastianMunozMora93/",
