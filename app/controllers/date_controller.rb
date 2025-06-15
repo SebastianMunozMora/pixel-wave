@@ -1,10 +1,10 @@
 class DateController < ApplicationController
   def index
-    @articles = Article.all
+    @articles = Article.visible
 
     if params[:current]
       @currentDate = params[:current]
-      @articles = Article.where("DATE(created_at) = ?", @currentDate)
+      @articles = Article.visible.where("DATE(created_at) = ?", @currentDate)
 
       @term = params[:q]
       if @term
@@ -26,11 +26,11 @@ class DateController < ApplicationController
 
 
   def latest
-    @articles = Article.all
+    @articles = Article.visible
   end
 
   def oldest
-    @articles = Article.all
+    @articles = Article.visible
   end
 
   private

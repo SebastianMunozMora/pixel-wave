@@ -20,10 +20,8 @@
   </div>
 
   <div id="articles" class="author-articles">
-      <h2><%= author.name %>'s Articles</h2>
-      <% @articles = Article.by_author_id(author.id) %>
-      <%= render "common/article-list" %>
-    </div>
-
-
+    <h2><%= author.name %>'s Articles</h2>
+    <% @articles = Article.visible.by_author_id(author.id) %>
+    <%= render "common/article-list" %>
+  </div>
 </div>

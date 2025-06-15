@@ -10,6 +10,10 @@
     }
 </style>
 
+<% if article.hidden %>
+    <% return %>
+<% end %>
+
 <% content_for :head do %>
     <%= tag.meta property: "og:image", content: "https://pixelwave.blog#{url_for(article.image)}" %>
     <%= tag.meta name: "title", content: article.title %>
