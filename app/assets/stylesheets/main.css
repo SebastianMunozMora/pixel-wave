@@ -2,6 +2,19 @@
  *= require font-awesome
  */
 /* page wide styles */
+
+:root {
+    --gray-100: #f8f9fa; /* Lightest gray */
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd; /* Neutral gray */
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529; /* Darkest gray */
+}
+
 a {
     text-decoration: none;
     color: inherit
@@ -25,13 +38,14 @@ a {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    font-size: 2.5rem;
+    font-size: 5rem !important;
     margin-bottom: 0.5rem;
     justify-self: center;
     color: rgb(255, 255, 255);
     width: 100%;
     padding: 15px;
     h1 {
+        text-align: center;
         margin: 5px;
         background: linear-gradient(90deg, rgba(36,27,0,1) 0%, rgba(222,152,63,1) 22%, rgb(145, 145, 145) 91%);
         -webkit-background-clip: text;
@@ -105,4 +119,20 @@ i {
         scrollbar-width: thin; /* Thin scrollbar */
         scrollbar-color: rgba(222, 152, 63, 1) transparent; /* Thumb color and track color */
     }
+}
+
+.about-us {
+    justify-items: center;
+    justify-self: center;
+    max-width: 700px;
+}
+
+textarea {
+    width: 100%;
+    height: 200px;
+}
+
+.article-excerpt {
+    color: var(--gray-600);
+    font-style: italic;
 }

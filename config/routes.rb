@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get "about_us/index"
   devise_for :users
   get "templates/index"
   get "templates/minimalist"

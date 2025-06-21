@@ -7,9 +7,9 @@
         </div>
     <% end %>
 
-    <div class="article-heading">
+    <h3 class="">
         <%= link_to "#{article.title}", article %>
-    </div>
+    </h3>
 
     <div class="date-category-box">
         <div class="category <%= "category-#{article.category.name}" %>">
@@ -27,7 +27,7 @@
         <%= link_to "#{article.author.name}", article.author %>
     </div>
 
-    <div class="article-body">
-        <%= truncate_words(article.body, 20) %>
+    <div class="article-excerpt">
+        <%= truncate_words(article.excerpt, 20) if article.excerpt %>
     </div>
 </div>

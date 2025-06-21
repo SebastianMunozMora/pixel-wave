@@ -26,22 +26,21 @@
     justify-items: center;
     margin-bottom: 15px;
     max-width: 80%;
+    text-align: justify;
+    background-color: 
+    padding: 20px;
+    justify-items: left;
 }
 
 .article-heading {
     word-wrap: break-word;
     justify-self: center;
     font-weight: bold;
-    font-size: larger;
+    font-size: 40px;
 }
 
 .trix-content {
     text-align: justify;
-}
-
-.single-article .article-body{
-    font-style: italic;
-    font-size: 15px;
 }
 
 .article-body {
@@ -108,7 +107,7 @@ span {
         color: rgba(0, 128, 0, 1);
     }
 
-    &.organge {
+    &.orange {
         color: rgba(255, 165, 0, 1);
     }
 
@@ -124,4 +123,22 @@ span {
 iframe {
     width: 100%;
     height: 400px;
+}
+
+/* Style for unordered lists with arrow decoration */
+ul {
+    list-style: none; /* Remove default bullet points */
+    padding-left: 1.5em; /* Add space for custom decoration */
+    li {
+        position: relative;
+        padding-left: 1.5em; /* Add space for the arrow */
+        margin-bottom: 0.5em; /* Add spacing between list items */
+        &::before {
+            content: "➤"; /* Unicode character for an arrow */
+            position: absolute;
+            left: 0;
+            color: #3498db; /* Bright blue arrow */
+            font-size: 1.2em; /* Adjust size of the arrow */
+        }
+    }
 }

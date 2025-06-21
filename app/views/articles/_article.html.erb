@@ -24,9 +24,11 @@
 
 <div id="<%= dom_id article %>" class="ff-article single-article">
 
-    <div class="article-heading">
-        <%= link_to "#{article.title}", article %>
-    </div>
+    <h1>
+        <div class="article-heading">
+            <%= link_to "#{article.title}", article %>
+        </div>
+    </h1>
 
     <% if article.image.attached? %>
         <div class="image-box">
@@ -44,9 +46,9 @@
         <%= link_to "#{article.author.name}", article.author %>
     </div>
 
-    <%= render_html @article.content %>
+    <%= raw article.body %>
 
-    <div class="article-body">
-        <%= article.body %>
+    <div class="article-excerpt">
+        <%= article.excerpt %>
     </div>
 </div>

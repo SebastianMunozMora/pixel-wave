@@ -18,8 +18,9 @@
         }
     }
 
-    .article-body {
+    .article-excerpt {
         font-size: 15px;
+        font-style: normal;
     }
 
     .arrow-right {
