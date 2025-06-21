@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get "about_us/index"
   devise_for :users
   get "templates/index"
   get "templates/minimalist"
@@ -31,6 +30,8 @@ Rails.application.routes.draw do
   get 'test/full'
   get 'main_page/index'
   get 'morse_interpreter/', to: 'morse_interpreter#index', as: 'morse_interpreter'
+  get "about_us/index"
+  get "about_us/", to: "about_us#index", as: "about_us"
   resources :articles
   resources :authors
   resources :categories

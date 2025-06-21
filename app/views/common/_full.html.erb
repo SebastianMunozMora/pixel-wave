@@ -27,7 +27,7 @@
         <%= link_to "#{article.author.name}", article.author %>
     </div>
 
-    <div class="article-excerpt">
+    <div class="excerpt">
         <%= truncate_words(article.excerpt, 20) if article.excerpt %>
     </div>
 </div>

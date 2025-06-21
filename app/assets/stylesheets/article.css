@@ -22,14 +22,11 @@
 }
 
 [id*="article_"] {
-    padding: 5px;
     justify-items: center;
     margin-bottom: 15px;
-    max-width: 80%;
     text-align: justify;
-    background-color: 
-    padding: 20px;
     justify-items: left;
+    padding: 5px;
 }
 
 .article-heading {

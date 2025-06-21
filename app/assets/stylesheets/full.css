@@ -18,9 +18,10 @@
         }
     }
 
-    .article-excerpt {
+    .excerpt {
         font-size: 15px;
         font-style: normal;
+        margin-top: 20px;
     }
 
     .arrow-right {

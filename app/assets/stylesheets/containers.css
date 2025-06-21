@@ -16,7 +16,6 @@
 .categories-section, .search-section {
     justify-self: center;
     overflow: scroll;
-    margin: 25px;
     background-color: white;
     .category-heading {
         color: white;
@@ -125,17 +124,8 @@
 }
 
 .main-section {
-    margin: 25px;
     background-color: white;
     overflow: scroll;
-
-    @media (max-width: 500px) {
-        .main-section {
-            display: flex;
-            width: 100%;
-            align-items: center;
-        }
-    }
 }
 
 .page-articles {
