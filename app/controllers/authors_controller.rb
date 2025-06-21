@@ -3,6 +3,9 @@ class AuthorsController < ApplicationController
   before_action :set_author, only: %i[ show edit update destroy ]
   before_action :require_admin_or_editor, only: %i[new create edit update destroy]
 
+  skip_before_action :authenticate_user!, only: %i[index show]
+
+
   # GET /authors or /authors.json
   def index
     @authors = Author.all
