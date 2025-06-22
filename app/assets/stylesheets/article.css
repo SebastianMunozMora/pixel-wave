@@ -123,7 +123,7 @@ iframe {
 }
 
 /* Style for unordered lists with arrow decoration */
-ul {
+ul.glossary {
     list-style: none; /* Remove default bullet points */
     padding-left: 1.5em; /* Add space for custom decoration */
     li {

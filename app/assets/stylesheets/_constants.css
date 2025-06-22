@@ -1,0 +1,42 @@
+:root {
+    /* Vibrant Orange Background Colors */
+    --background-orange-light: #FFC074; /* Vibrant Light Orange */
+    --background-orange-lighter: #FFB347; /* Vibrant Peach */
+    --background-orange-soft: #FFA500; /* Pure Orange */
+    --background-orange-muted: #FF8C00; /* Darker Vibrant Orange */
+    --background-orange-warm: #FF7F50; /* Coral Orange */
+
+    /* Headings Color Palette for Contrast */
+    --heading-color-h1: #2C3E50; /* Dark Blue-Gray */
+    --heading-color-h2: #1A1A1A; /* Very Dark Gray */
+    --heading-color-h3: #34495E; /* Dark Blue */
+    --heading-color-h4: #5D6D7E; /* Medium Blue-Gray */
+    --heading-color-h5: #000000; /* Black */
+    --heading-color-h6: #4B6584; /* Medium Gray-Blue */
+
+    /* Headings Font Sizes */
+    --font-size-h1: 2.8em; /* 44.8px */
+    --font-size-h2: 2.2em; /* 35.2px */
+    --font-size-h3: 1.8em; /* 28.8px */
+    --font-size-h4: 1.4em; /* 22.4px */
+    --font-size-h5: 1.2em; /* 19.2px */
+    --font-size-h6: 1em;    /* 16px */
+
+    /* Font Sizes for Lists and Links */
+    --font-size-ul: 1em; /* 16px for unordered lists */
+    --font-size-ol: 1em; /* 16px for ordered lists */
+    --font-size-li: 1em; /* 16px for list items */
+    --font-size-a: 1em;  /* 16px for links */
+}
+
+:root {
+    --gray-100: #f8f9fa; /* Lightest gray */
+    --gray-200: #e9ecef;
+    --gray-300: #dee2e6;
+    --gray-400: #ced4da;
+    --gray-500: #adb5bd; /* Neutral gray */
+    --gray-600: #6c757d;
+    --gray-700: #495057;
+    --gray-800: #343a40;
+    --gray-900: #212529; /* Darkest gray */
+}

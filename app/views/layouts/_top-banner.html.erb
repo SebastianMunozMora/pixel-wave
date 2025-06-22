@@ -3,6 +3,7 @@
     <%= link_to "Pixel Wave", "/" %>
   </h1>
   <%= render partial: "layouts/category-tab", locals: { cats: Category.all } %>
-  <%= render partial: "layouts/about-us-tab", locals: { cats: Category.all } %>
+  <%= render partial: "layouts/about-us-tab"  %>
+  <%= render partial: "layouts/social-networks" %>
   <%= render "layouts/top-banner/search-bar" %>
 </header>
