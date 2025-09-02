@@ -1,0 +1,10 @@
+<%
+    imageData = { src: "src/image.png", caption: "image caption"}
+    description = "Descriptive paragraph"
+%>
+
+
+<div class="picture-description">
+    <%= render "/articles/templates/image-caption", src: imageData[:src], caption: imageData[:caption] %>
+    <p><%= description %></p>
+</div>

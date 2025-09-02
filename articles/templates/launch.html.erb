@@ -1,0 +1,21 @@
+<%
+    launchDate = "10"
+    p "hello world"
+    description =  "this is a brief description of a launch day article"
+    src = "/image/blobs"
+    opinion = "final opinion of the upcoming or releasing game"
+%>
+
+<div class="launch-article">
+    <h2 class="">Launch Date:<%= launchDate %></h2> <% #countdown element? %>
+
+    <p>
+        <%= description %>
+    </p>
+
+    <img src="<%= src %>"> <% #image gallery? src collection %>
+
+    <p>
+        <%= opinion %>
+    </p>
+</div>

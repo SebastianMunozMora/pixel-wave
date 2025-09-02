@@ -1,0 +1,28 @@
+<%
+    gameTitle = "Game Title"
+    p "hello world"
+    description =  "this is a brief description of a launch day article"
+    src = "/image/blobs"
+    topics = "final opinion of the upcoming or releasing game"
+    glossary = [{ src: "/img/src0", description: "game element 0" },
+    topics
+        { src: "/img/src1", description: "game element 1" },
+        { src: "/img/src2", description: "game element 2" },
+        { src: "/img/src3", description: "game element 3" }]
+%>
+
+<div class="analysis-article">
+    <h2 class="">Game Analysis:<%= gameTitle %></h2>
+
+    <p>
+        <%= description %>
+    </p>
+
+    <img src="<%= src %>"> <% #image gallery? src collection %>
+
+    <ul>
+        <% for item in glossary %>
+            <li><img src="<%= item[:src]%>"><%= item[:description] %></li>
+        <% end %>
+    </ul>
+</div>
