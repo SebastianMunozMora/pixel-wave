@@ -23,7 +23,7 @@ h1 {
     padding: 0.5em;
     border-radius: 5px;
     color: var(--heading-color-h1);
-    font-size: var(--heading-color-h1);
+    font-size: var(--font-size-h1);
 }
 
 h2 {
