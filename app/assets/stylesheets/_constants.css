@@ -27,6 +27,8 @@
     --font-size-ol: 1em; /* 16px for ordered lists */
     --font-size-li: 1em; /* 16px for list items */
     --font-size-a: 1em;  /* 16px for links */
+
+    --theme-gradient: linear-gradient(90deg, rgba(36, 27, 0, 1) 0%, rgba(222, 152, 63, 1) 22%, rgb(145, 145, 145) 91%);
 }
 
 :root {
@@ -40,3 +42,4 @@
     --gray-800: #343a40;
     --gray-900: #212529; /* Darkest gray */
 }
+

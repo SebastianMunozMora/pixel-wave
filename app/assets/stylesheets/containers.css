@@ -192,4 +192,13 @@ footer {
     flex-direction: column;
     display: flex;
     text-align: -webkit-center;
+
+    .social-networks {
+        align-self: center;
+        ul {
+            li {
+                text-align: left;
+            }
+        }
+    }
 }

@@ -36,6 +36,10 @@ a {
     color: rgb(255, 255, 255);
     width: 100%;
     padding: 15px;
+    border-bottom: 5px solid transparent;
+    border-image: linear-gradient(90deg, rgba(36, 27, 0, 1) 0%, rgba(222, 152, 63, 1) 22%, rgb(145, 145, 145) 91%);
+    border-image-slice: 1;
+
     h1 {
         text-align: center;
         margin: 5px;
@@ -50,9 +54,18 @@ a {
         }
     }
 
-    border-bottom: 5px solid transparent;
-    border-image: linear-gradient(90deg, rgba(36, 27, 0, 1) 0%, rgba(222, 152, 63, 1) 22%, rgb(145, 145, 145) 91%);
-    border-image-slice: 1;
+    .categories-search {
+        display: flex;
+        
+        .search-bar {
+            align-self: end;
+            max-height: 100px;
+            input {
+                background: var(--theme-gradient);
+                color: var(--gray-100);
+            }
+        }
+    }
 }
 
 @media (width <= 900px) {
