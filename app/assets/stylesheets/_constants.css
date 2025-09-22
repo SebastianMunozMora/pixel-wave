@@ -28,7 +28,8 @@
     --font-size-li: 1em; /* 16px for list items */
     --font-size-a: 1em;  /* 16px for links */
 
-    --theme-gradient: linear-gradient(90deg, rgba(36, 27, 0, 1) 0%, rgba(222, 152, 63, 1) 22%, rgb(145, 145, 145) 91%);
+    --theme-gradient: linear-gradient(90deg, rgb(251, 251, 251) 80%, rgba(222, 152, 63, 1) 85%, rgb(251, 251, 251) 90%);
+    --simple-theme-gradient: linear-gradient(90deg, rgba(36, 27, 0, 1) 10%, rgba(222, 152, 63, 1) 20%, rgb(145, 145, 145) 91%);
 }
 
 :root {

@@ -75,8 +75,12 @@ a {
         padding: 2px;
     }
 
-    .search-bar {
-        display: none;
+    .categories-search {
+        display: flex;
+        flex-direction: column;
+        .search-bar {
+            justify-items: center;
+        }
     }
 }
 

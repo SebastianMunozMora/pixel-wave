@@ -170,10 +170,6 @@ form.search-form {
     .categories-section.category-list-view {
         height: 100%;
     }
-
-    @media (width <= 900px) {
-        display: none;
-    }
 }
 
 .page-articles {
