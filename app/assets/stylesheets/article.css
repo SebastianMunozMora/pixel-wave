@@ -51,6 +51,7 @@
 }
 
 .caption {
+    display: flex;
     justify-self: center;
     color: rgb(137, 137, 137);
     display: inline-block;
