@@ -2,7 +2,7 @@
 <div class="search-bar">
     <%= form_tag(url_for(only_path: false), method: :get, :class => 'search-form') do %>
         <%= text_field_tag(:q, nil, placeholder: '', onkeypress: "if(event.keyCode == 13) { this.form.submit(); }") %>
-        <button type="submit">
+        <button type="submit" aria-label="Search Bar">
             <%= fa_icon "search" %>
         </button>
     <% end %>
