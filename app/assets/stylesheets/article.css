@@ -8,8 +8,9 @@
     padding: 5px;
     background-color: white;
     justify-items: center;
+    justify-self: center;
     margin-bottom: 15px;
-    width: 98%;
+    width: fit-content;
 }
 
 .image-box-thumb {
