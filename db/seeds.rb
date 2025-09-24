@@ -17,3 +17,4 @@
 
 #categoryToEdit.save
 
+Category.create!([{ name: "series" }])
