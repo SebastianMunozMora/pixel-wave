@@ -37,17 +37,19 @@
         </div>
     <% end %>
 
-    <div class="date-field">
-        <%= link_to "#{article.created_at.strftime("%d-%m-%y")}", "date/?current=#{article.created_at.to_date}" %>
-    </div>
+    <div class="columns">
+        <div class="date-field">
+            <%= link_to "#{article.created_at.strftime("%d-%m-%y")}", "date/?current=#{article.created_at.to_date}" %>
+        </div>
 
-    <div class="author-box">
-        <% if article.author.avatar.attached? %>
-            <div class="">
-                <%= image_tag(article.author.avatar, :class => "author-image", :alt => "#{article.author.name}", :style=>"width:50px; height: 50px") %>
-            </div>
-        <% end %>
-        <%= link_to "#{article.author.name}", article.author %>
+        <div class="author-box">
+            <% if article.author.avatar.attached? %>
+                <div class="">
+                    <%= image_tag(article.author.avatar, :class => "author-image", :alt => "#{article.author.name}", :style=>"width:50px; height: 50px") %>
+                </div>
+            <% end %>
+            <%= link_to "#{article.author.name}", article.author %>
+        </div>
     </div>
 
     <%= raw article.body %>

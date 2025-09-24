@@ -150,3 +150,10 @@ textarea {
     color: var(--gray-600);
     font-style: italic;
 }
+
+.columns {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
