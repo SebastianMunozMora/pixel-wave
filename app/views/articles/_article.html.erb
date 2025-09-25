@@ -24,10 +24,8 @@
 
 <div id="<%= dom_id article %>" class="ff-article single-article">
 
-    <h1>
-        <div class="article-heading">
-            <%= link_to "#{article.title}", article %>
-        </div>
+    <h1 class="article-heading">
+        <%= link_to "#{article.title}", article %>
     </h1>
 
     <% if article.image.attached? %>
