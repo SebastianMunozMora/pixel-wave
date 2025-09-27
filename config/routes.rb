@@ -22,6 +22,7 @@ Rails.application.routes.draw do
   get 'category/entertainment'
   get 'category/science'
   get 'category/lifestyle'
+  get 'category/series'
   get 'category/', to: 'category#index', as: 'category'
   get 'custom_article/index'
   get 'morse_interpreter/index'

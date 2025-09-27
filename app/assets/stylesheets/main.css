@@ -60,6 +60,15 @@ a {
         .search-bar {
             align-self: end;
             max-height: 100px;
+            position: absolute;
+
+            top: 20px;
+            right: 20px;
+
+            @media (width <= 900px) {
+                right: 0;
+            }
+
             input {
                 background: var(--theme-gradient);
                 color: var(--gray-100);

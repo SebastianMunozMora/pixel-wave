@@ -51,6 +51,11 @@ class CategoryController < ApplicationController
     @articles = searchArticles(params[:q], @category.articles.visible.order(created_at: :desc))
   end
 
+  def series
+    @category = Category.find_by(name: "series")
+    @articles = searchArticles(params[:q], @category.articles.visible.order(created_at: :desc))
+  end
+
   private
   def searchArticles(term, articles)
     @term = term
