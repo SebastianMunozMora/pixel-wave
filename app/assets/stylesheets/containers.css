@@ -29,9 +29,6 @@
     color: black;
 }
 
-.category-tab .category {
-    border-right: 2px solid blue;
-}
 
 .category-tab .category:last-child {
     border-right: none;
