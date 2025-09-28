@@ -48,6 +48,8 @@
             <% end %>
             <%= link_to "#{article.author.name}", article.author %>
         </div>
+
+        <%= render "components/likes-counter", likes: article.likes  || 0 %>
     </div>
 
     <%= raw article.body %>
