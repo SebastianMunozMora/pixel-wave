@@ -1,15 +1,3 @@
-<style>
-    .single-article {
-        max-width: 700px;
-        justify-self: center;
-
-        .article-heading {
-            font-size: 2em;
-            margin-bottom: 15px;
-        }
-    }
-</style>
-
 <% if article.hidden %>
     <% return %>
 <% end %>
@@ -36,20 +24,9 @@
     <% end %>
 
     <div class="columns">
-        <div class="date-field">
-            <%= link_to "#{article.created_at.strftime("%d-%m-%y")}", "date/?current=#{article.created_at.to_date}" %>
-        </div>
-
-        <div class="author-box">
-            <% if article.author.avatar.attached? %>
-                <div class="">
-                    <%= image_tag(article.author.avatar, :class => "author-image", :alt => "#{article.author.name}", :style=>"width:50px; height: 50px") %>
-                </div>
-            <% end %>
-            <%= link_to "#{article.author.name}", article.author %>
-        </div>
-
-        <%= render "components/likes-counter", likes: article.likes  || 0 %>
+        <%= render "components/article-author", author: article.author %>
+        <%= render "components/article-date", date: article.created_at %>
+        <%= render "components/likes-counter", likes: article.likes || 0 %>
     </div>
 
     <%= raw article.body %>
