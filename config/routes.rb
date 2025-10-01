@@ -33,7 +33,11 @@ Rails.application.routes.draw do
   get 'morse_interpreter/', to: 'morse_interpreter#index', as: 'morse_interpreter'
   get "about_us/index"
   get "about_us/", to: "about_us#index", as: "about_us"
-  resources :articles
+  resources :articles do
+    member do
+      patch :like
+    end
+  end
   resources :authors
   resources :categories
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html

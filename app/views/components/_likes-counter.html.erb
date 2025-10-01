@@ -1,6 +1,11 @@
 <div class="likes-counter">
-    <button onClick="">
-        <%= fa_icon "check" %>
-        <%= likes.to_i %>
-    </button>
+    <form class="button_to" method="post" action=<%= "/articles/#{id}/like" %>>
+        <input type="hidden" name="_method" value="patch">
+        <input type="hidden" name="authenticity_token" value="...">
+        <button class="like-button" type="submit">
+            <%= fa_icon "check" %><span class="likes-count">
+                <%= likes.to_i %>
+            </span>
+        </button>
+    </form>
 </div>

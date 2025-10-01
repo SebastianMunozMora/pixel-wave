@@ -9,9 +9,8 @@ class ArticlesController < ApplicationController
   def index
     @articles = Article.all
     @networks = {
-      "LinkedIn" => "https://www.linkedin.com/in/sebastian-munoz-mora-70799863/",
-      "Facebook" => "https://www.facebook.com/SebastianMunozMora93/",
-      "Instagram" => "https://www.instagram.com/semm93/",
+      "Facebook" => "https://www.facebook.com/profile.php?id=61577847925384",
+      "Instagram" => "https://www.instagram.com/pixelwave64/",
     }
     @authors = Author.all
   end
@@ -69,6 +68,15 @@ class ArticlesController < ApplicationController
     respond_to do |format|
       format.html { redirect_to articles_path, status: :see_other, notice: "Article was successfully destroyed." }
       format.json { head :no_content }
+    end
+  end
+
+  def like
+    @article = Article.find(params[:id])
+    @article.increment!(:likes)
+    respond_to do |format|
+      format.html { redirect_to @article, notice: "Liked!" }
+      format.json { render json: { likes: @article.likes } }
     end
   end
 

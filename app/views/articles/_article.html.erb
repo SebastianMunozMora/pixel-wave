@@ -26,7 +26,7 @@
     <div class="columns">
         <%= render "components/article-author", author: article.author %>
         <%= render "components/article-date", date: article.created_at %>
-        <%= render "components/likes-counter", likes: article.likes || 0 %>
+        <%= render "components/likes-counter", likes: article.likes || 0, id: article.id %>
     </div>
 
     <%= raw article.body %>
