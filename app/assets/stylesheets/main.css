@@ -176,3 +176,19 @@ textarea {
         margin-bottom: 15px;
     }
 }
+
+.article-excerpt {
+    margin: 15px 0;
+    width: 50%;
+}
+
+.article-comments {
+    margin: 15px 0;
+
+    .single-comment {
+        margin: 15px 0;
+        padding: 5px;
+        border-radius: 5px;
+        background-color: var(--gray-300);
+    }
+}

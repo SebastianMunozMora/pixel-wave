@@ -29,6 +29,10 @@
         <%= render "components/likes-counter", likes: article.likes || 0, id: article.id %>
     </div>
 
+    <div class="article-excerpt">
+        <%= article.excerpt %>
+    </div>
+
     <%= sanitize(article.body, tags: %w(p h1 h2 h3 h4 h5 h6 a img ul ol li strong em br iframe), attributes: %w(href src alt title class)) %>
 
     <div class="article-excerpt">
