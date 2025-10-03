@@ -15,4 +15,14 @@ module ApplicationHelper
     # Return the unescaped content marked as safe for rendering
     unescaped_content.html_safe
   end
+
+  def formatted_date(date, type)
+
+    case type
+      when "long"
+        date.strftime("%B %d %Y")
+      when "numerical"
+        date.strftime("%d %m %Y")
+    end
+  end
 end

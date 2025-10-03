@@ -1,3 +1,4 @@
+
 <div class="date-field">
-    <%= link_to "#{date.strftime("%B %d %Y")}", "date/?current=#{date.to_date}" %>
+    <%= link_to "#{formatted_date(date, "long")}", "date/?current=#{date.to_date}" %>
 </div>
