@@ -2,6 +2,7 @@ require "date"
 class Article < ApplicationRecord
     belongs_to :author
     has_one_attached :image
+    has_many :comments
     belongs_to :category
     validates :image_caption, length: { maximum: 255 }
 

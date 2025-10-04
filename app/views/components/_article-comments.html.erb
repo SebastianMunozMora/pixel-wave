@@ -1,0 +1,15 @@
+<div class="article-comments">
+    <form class="button_to" method="post" action=<%= "/articles/#{id}/comment" %>>
+        <input type="hidden" name="_method" value="patch">
+        <textarea name="comment[body]" placeholder="Write your comments here..." rows="3" class="comment-input"></textarea>
+        <button class="submit-comment-button" type="submit">
+            <%= fa_icon "paper-plane" %> Comment!
+        </button>
+    </form>
+
+    <% for comment in comments do %>
+        <div class="single-comment">
+            <%= comment %>
+        </div>
+    <% end %>
+</div>

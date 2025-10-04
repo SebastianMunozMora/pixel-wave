@@ -79,6 +79,27 @@ class ArticlesController < ApplicationController
     end
   end
 
+  def comment
+    @article = Article.find(params[:id])
+
+    @comment = Comment.new()
+    respond_to do |format|
+      if @article.save
+        format.html { redirect_to @article, notice: "Article was successfully created." }
+        format.json { render :show, status: :created, location: @article }
+      else
+        format.html { render :new, status: :unprocessable_entity }
+        format.json { render json: @article.errors, status: :unprocessable_entity }
+      end
+    end
+    @comments = @article.comments
+
+    respond_to do |format|
+      format.html { redirect_to @article, notice: "Commented!" }
+      format.json { render json: { comments: @comments } }
+    end
+  end
+
   private
     def require_admin_or_editor
       unless current_user.admin? || current_user.editor?
@@ -101,5 +122,9 @@ class ArticlesController < ApplicationController
     # Only allow a list of trusted parameters through.
     def article_params
       params.require(:article).permit(:title, :body, :image, :author_id, :category_id, :content, :image_caption, :hidden, :excerpt)
+    end
+
+    def comment_params
+      params.require(:comment).permit(:commnet, :article)
     end
 end
