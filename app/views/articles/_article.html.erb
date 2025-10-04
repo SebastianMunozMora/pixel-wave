@@ -23,14 +23,14 @@
         </div>
     <% end %>
 
-    <div class="columns article-columns">
+    <div class="columns article-columns reversed">
         
         <%= render "components/article-author", author: article.author %>
         <%= render "components/article-date", date: article.created_at %>
         <%= render "components/likes-counter", likes: article.likes || 0, id: article.id %>
     </div>
 
-    <div class="article-excerpt">
+    <div class="article-excerpt reversed">
         <%= article.excerpt %>
     </div>
 
