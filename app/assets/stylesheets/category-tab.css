@@ -6,13 +6,14 @@
         text-transform: capitalize;
         display: inline;
         padding: 2px;
+        margin-top: 0;
     }
 }
 
-@media (max-width: 768px) { /* Target devices with a width of 768px or less */
+@media (max-width: 900px) { /* Target devices with a width of 768px or less */
     .category-tab {
         display: flex; /* Use flexbox to align items horizontally */
-        max-width: 300px;
+        max-width: 100%;
         overflow-x: auto; /* Enable horizontal scrolling */
         -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS devices */
         gap: 10px; /* Add spacing between categories */
