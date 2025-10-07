@@ -2,7 +2,6 @@
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Helvetica Neue', sans-serif; /* Modern sans-serif font */
     color: #2c3e50; /* Dark grey-blue for contrast */
-    margin-top: 1em;
     margin-bottom: 0.5em;
     line-height: 1.3;
     font-weight: 600; /* Slightly lighter than bold */

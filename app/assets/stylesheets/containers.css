@@ -120,6 +120,15 @@
     color: steelblue;
 }
 
+.category-heading-series:hover {
+    color: rgb(207, 187, 88);
+}
+
+.categories-section .category-heading-series {
+    border-bottom: 2px solid rgb(207, 187, 88);
+    color: rgb(207, 187, 88);
+}
+
 .main-section {
     background-color: white;
     overflow: scroll;

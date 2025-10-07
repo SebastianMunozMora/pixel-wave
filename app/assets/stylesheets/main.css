@@ -30,7 +30,6 @@ a {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    font-size: 5rem !important;
     margin-bottom: 0.5rem;
     justify-self: center;
     color: rgb(255, 255, 255);
@@ -39,6 +38,15 @@ a {
     border-bottom: 5px solid transparent;
     border-image: linear-gradient(90deg, rgba(36, 27, 0, 1) 0%, rgba(222, 152, 63, 1) 22%, rgb(145, 145, 145) 91%);
     border-image-slice: 1;
+
+    img {
+        object-fit: cover;
+        max-width: 500px;
+
+        @media (width <= 900px) {
+            max-width: 300px;
+        }
+    }
 
     h1 {
         text-align: center;
@@ -52,6 +60,10 @@ a {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+    }
+
+    h2 {
+        border-bottom: 0;
     }
 
     .categories-search {
@@ -78,15 +90,26 @@ a {
 }
 
 @media (width <= 900px) {
+
     .top-banner, .search-bar {
         display: block;
         width: 100%;
         padding: 2px;
+        h1.main-title {
+            margin: 0;
+            padding: 0;
+            font-size: 30px;
+        }
     }
 
     .categories-search {
         display: flex;
         flex-direction: column;
+        align-items: center;
+
+        .category-tab h2 {
+            font-size: 30px;
+        }
         .search-bar {
             justify-items: center;
         }
@@ -115,11 +138,7 @@ a {
 .page {
     justify-self: center;
 }
-
-i {
-    margin: 5px;
-}
-
+p
 * {
 
     /* Custom scrollbar for WebKit-based browsers (Chrome, Safari, Edge) */

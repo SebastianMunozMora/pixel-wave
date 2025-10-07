@@ -1,7 +1,7 @@
 <header class="top-banner">
-  <h1>
-    <%= link_to "Pixel Wave", "/" %>
-  </h1>
+  <a href="/">
+    <%= image_tag("pixel-wave-logo-edited.png", :class => "author-image", :alt => "Pixel Wave Logo") %>
+  </a>
   <div class="categories-search">
     <%= render partial: "layouts/category-tab", locals: { cats: Category.all } %>
     <%= render "layouts/top-banner/search-bar" %>
