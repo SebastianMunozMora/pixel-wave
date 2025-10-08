@@ -1,7 +1,5 @@
-<div class="">
-	<div class="vertical">
-		<% articles.each do |article| %>
-			<%= render partial: "common/full", locals: { article: article, category: false } %>
-		<% end %>
-	</div>
+<div class="article-list">
+	<% articles.each do |article| %>
+		<%= render partial: "common/full", locals: { article: article, category: false } %>
+	<% end %>
 </div>
