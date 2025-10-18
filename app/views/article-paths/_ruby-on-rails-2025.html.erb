@@ -8,8 +8,35 @@
     <h5>
         Rails World Opening Keynote:
     </h5>
+    
+    <p>
+        David Heinemeier Hansson (D.H.H.), the creator of the framework talks about the new features coming in Rails 8.1
+    </p>
 
     <iframe src="https://www.youtube.com/embed/gcwzWzC7gUA">
+
+    <h5>
+        The Rails Doctrine
+    </h5>
+
+    <p>
+        <%= link_to "Doctrine", "https://rubyonrails.org/doctrine"%>
+        The framework has 9 rules for developers to follow in order to rovide a seamless experience using this tool
+    </p>
+
+    <h5>
+        Why should developers or companies choose this framework in 2025?
+    </h5>
+
+    <p>
+        There's a new javascript framework coming out every week (or so it seems), and new developers tend to follow every new trend, however it's important not to overlook well established platforms like Rails, not only it's been run for over 20 years, it's still being updated, adding new features for modern needs.
+    </p>
+
+    <p>
+        There are many web services nowadays that charge a good amount of money just to serve and deploy a website, however, developers should learn and know how a website is deployed on the web, not from a GUI provided by a platform, but by having a deeper understanding of how the website "lives" in the server mostlikely Linux.
+
+        Linux is one of the most valuable skills developers should have, not only because knowing how to properly use a terminal is vital, but also because many servers run in linux. 
+    </p>
 
     <h5>Key Features</h5>
     <ul>
@@ -39,13 +66,13 @@
     </p>
     <pre>
         <code>
-        class ArticlesController < ApplicationController
+        class StorageController < ApplicationController
             def index
-            @articles = Article.all
+                @items = Storage.all
             end
 
             def show
-            @article = Article.find(params[:id])
+                @item = Storage.find(params[:id])
             end
         end
         </code>
@@ -53,19 +80,19 @@
 
     <h5>Why Use Ruby on Rails?</h5>
     <p>
-        Ruby on Rails is an excellent choice for developers who want to build web applications quickly and efficiently. Its focus on simplicity, productivity, and developer happiness has made it a favorite among startups and established companies alike.
+        The framework offers a big toolbox for both frontend and backend development. It also provides tools for deploying 
     </p>
 
     <h5>Resources</h5>
     <ul>
         <li>
-        <a href="https://rubyonrails.org/" target="_blank">Official Ruby on Rails Website</a>
+            <a href="https://rubyonrails.org/" target="_blank">Official Ruby on Rails Website</a>
         </li>
         <li>
-        <a href="https://guides.rubyonrails.org/" target="_blank">Rails Guides</a>
+            <a href="https://guides.rubyonrails.org/" target="_blank">Rails Guides</a>
         </li>
         <li>
-        <a href="https://github.com/rails/rails" target="_blank">Rails GitHub Repository</a>
+            <a href="https://github.com/rails/rails" target="_blank">Rails GitHub Repository</a>
         </li>
     </ul>
 </div>
