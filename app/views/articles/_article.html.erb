@@ -33,5 +33,11 @@
         <%= article.excerpt %>
     </div>
 
-    <%= sanitize(article.body, tags: %w(p h1 h2 h3 h4 h5 h6 a img ul ol li strong em br iframe), attributes: %w(href src alt title class)) %>
+    <% if article.body.present? %>
+        <%= sanitize(article.body, tags: %w(p h1 h2 h3 h4 h5 h6 a img ul ol li strong em br iframe), attributes: %w(href src alt title class)) %>
+    <% end %>
+
+    <% if article.path.present? %>
+        <%= render "article-paths/#{article.path}" %>
+    <% end %>
 </div>
