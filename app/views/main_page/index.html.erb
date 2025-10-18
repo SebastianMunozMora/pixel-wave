@@ -1,8 +1,7 @@
 
 <div style="justify-items: center;" class="page">
-
+  <%= link_to "Donation Page", "/donation/", :class => "main-donation-link"%>
   <div class="page-articles">
-
     <div class="categories-section">
       <% @categories.each do |category| %>
         <div class="<%= "category category-heading category-heading-#{category.name}" %>">

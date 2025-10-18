@@ -236,3 +236,11 @@ textarea {
         display: none;
     }
 }
+
+.main-donation-link {
+    justify-content: center;
+    padding: 5px;
+    background-color: var(--gray-300);
+    width: 100%;
+    display: flex;
+}
