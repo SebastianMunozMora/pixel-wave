@@ -1,7 +1,3 @@
-.article {
-    max-width: 370px;
-}
-
 .author-box {
     font-weight: bold;
     justify-self: right;
@@ -146,3 +142,4 @@ ul.glossary {
         }
     }
 }
+
