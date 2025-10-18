@@ -1,0 +1,11 @@
+<div class="dislikes-counter">
+    <form class="button_to" method="post" action=<%= "/articles/#{id}/dislike" %>>
+        <input type="hidden" name="_method" value="patch">
+        <input type="hidden" name="authenticity_token" value="...">
+        <button class="dislike-button" type="submit">
+            <%= fa_icon "times" %><span class="dislikes-count">
+                <%= dislikes.to_i %>
+            </span>
+        </button>
+    </form>
+</div>
