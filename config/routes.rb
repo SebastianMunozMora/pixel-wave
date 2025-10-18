@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'donation/', to: 'donation#index', as: 'donation'
+  get "donation/index"
+  get "donation/thank_you"
+  get "donation/try_again"
   devise_for :users
   get "templates/index"
   get "templates/minimalist"
