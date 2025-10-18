@@ -244,3 +244,17 @@ textarea {
     width: 100%;
     display: flex;
 }
+
+.like-button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    color: green;
+}
+
+.dislike-button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    color: red;
+}

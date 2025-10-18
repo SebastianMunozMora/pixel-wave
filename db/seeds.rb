@@ -17,4 +17,14 @@
 
 #categoryToEdit.save
 
-Category.create!([{ name: "series" }])
+#Category.create!([{ name: "series" }])
+#
+
+# Article.all.each do |article|
+#   article.update(comments: "This is a Comment")
+# end
+
+# Add random dislikes to all articles
+Article.all.each do |article|
+  article.update(dislikes: 0) # Assign a random number of dislikes between 0 and 50
+end

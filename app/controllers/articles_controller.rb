@@ -3,7 +3,7 @@ class ArticlesController < ApplicationController
   before_action :set_article, only: %i[ show edit update destroy ]
   before_action :require_admin_or_editor, only: %i[new create edit update destroy]
 
-  skip_before_action :authenticate_user!, only: %i[index show like]
+  skip_before_action :authenticate_user!, only: %i[index show like dislike]
   # GET /articles or /articles.json
   def index
     @articles = Article.all
@@ -76,6 +76,15 @@ class ArticlesController < ApplicationController
     respond_to do |format|
       format.html { redirect_to @article, notice: "Liked!" }
       format.json { render json: { likes: @article.likes } }
+    end
+  end
+
+  def dislike
+    @article = Article.find(params[:id])
+    @article.increment!(:dislikes)
+    respond_to do |format|
+      format.html { redirect_to @article, notice: "Disliked!" }
+      format.json { render json: { dislikes: @article.dislikes } }
     end
   end
 
