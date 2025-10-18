@@ -11,6 +11,7 @@
     justify-self: center;
     margin-bottom: 15px;
     width: fit-content;
+    max-width: 370px;
 }
 
 .image-box-thumb {
