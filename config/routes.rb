@@ -40,6 +40,7 @@ Rails.application.routes.draw do
   resources :articles do
     member do
       patch :like
+      patch :dislike
     end
   end
   resources :authors
