@@ -1,0 +1,47 @@
+<div class="article midi-tech">
+    <h3 class="article-title">The MIDI Protocol</h3>
+
+    <p>
+        MIDI (Musical Instrument Digital Interface) is a standard that is used for the communicaiton between digital instruments, which can be embeded systems like keyboards and synthesizers, or computers which require an audio/MIDI interface for communication
+    </p>
+
+    <h5>How does it Work</h5>
+
+    <%= link_to "General Midi Wiki","https://en.wikipedia.org/wiki/General_MIDI" %>
+    <p>
+        The protocol defines blocks of bytes for specific messages like "Note On" or "Note Off" just to send musical notes "A,B,C,D,F,G" in all octaves with a specific dynamic value.
+
+        There are other messages that serve to control other aspects of instruments or Digital Audio Workstations (DAW), like surface controllers, that use control change messages to control fader values, panning, mute, solo etc...
+    </p>
+
+    <h5>Wny is it relevant in 2025</h5>
+
+    <p>
+        Even though this is an old protocol, it's still being used and updated with the inclusion of MIDI 2.0
+
+        which supports a bigger bit depth from 7 bits to 32, givinig a more granular and precise approach dynamic ranges for instruments.
+
+        Now we have bi-directinal communication which enables devices to synchronize and share information to the other instruments about their capabilities
+    </p>
+
+
+    <h5>Applications of MIDI</h5>
+    <ul>
+        <li>Digital audio workstations (DAW)</li>
+        <li>Live performances with MIDI controllers</li>
+        <li>Automating instruments like synthesizers</li>
+        <li>Lighting and stage effects automatization</li>
+    </ul>
+
+    <h5>Advantages of MIDI</h5>
+    <p>
+        MIDI offers several advantages, including its small file size, real-time performance capabilities, and the ability to edit musical data easily. It has become an essential tool for musicians, producers, and sound designers.
+    </p>
+
+    <h5>Other Articles</h5>
+    <ul>
+        <li><a href="https://www.midi.org/" target="_blank">Official MIDI Association</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/MIDI" target="_blank">MIDI on Wikipedia</a></li>
+        <li><a href="https://www.soundonsound.com/techniques/midi-basics" target="_blank">MIDI Basics - Sound on Sound</a></li>
+    </ul>
+</div>
