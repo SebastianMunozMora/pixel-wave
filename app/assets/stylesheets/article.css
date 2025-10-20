@@ -39,10 +39,6 @@
     width: 100%;
 }
 
-.trix-content {
-    text-align: justify;
-}
-
 .article-body {
     max-width: 100% !important;
     text-align: justify;
