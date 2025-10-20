@@ -6,7 +6,6 @@
 @import url(_constants.css);
 @import url(_author.css);
 
-
 a {
     text-decoration: none;
     color: inherit
@@ -130,6 +129,7 @@ a {
 .page {
     background-size: 40px 40px;
     background-position: -19px -19px;
+    justify-self: center;
 }
 
 .page-articles {
@@ -141,9 +141,6 @@ a {
     }
 }
 
-.page {
-    justify-self: center;
-}
 p
 * {
 
@@ -224,17 +221,6 @@ textarea {
     width: 50%;
 }
 
-.article-comments {
-    margin: 15px 0;
-
-    .single-comment {
-        margin: 15px 0;
-        padding: 5px;
-        border-radius: 5px;
-        background-color: var(--gray-300);
-    }
-}
-
 .notice ,.alert {
     @media (max-width: 900px) { 
         display: none;
@@ -249,16 +235,13 @@ textarea {
     display: flex;
 }
 
-.like-button {
+.like-button, .dislike-button {
     width: 50px;
     height: 50px;
     margin: 5px;
     color: green;
-}
 
-.dislike-button {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-    color: red;
+    &.dislike-button {
+        color: red;
+    }
 }

@@ -19,4 +19,8 @@ class Article < ApplicationRecord
     def to_param
         "#{id}-#{title.parameterize}"
     end
+
+    def low_quality_image
+        image.variant(format: :webp, resize_to_limit: [400, 400]) # Resize and reduce quality
+    end
 end
