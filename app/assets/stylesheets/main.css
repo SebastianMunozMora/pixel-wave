@@ -213,6 +213,10 @@ textarea {
     .date-field {
         padding: 5px;
     }
+
+    &.donation-page {
+        padding: 15px;
+    }
 }
 
 .article-excerpt {
