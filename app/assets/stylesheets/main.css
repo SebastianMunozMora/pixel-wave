@@ -213,6 +213,10 @@ textarea {
 
     &.donation-page {
         padding: 15px;
+
+        img.donation-banner {
+            max-width: 370px;
+        }
     }
 }
 
