@@ -1,4 +1,5 @@
 <% content_for :head do %>
+  <%= tag.meta property: "og:image", content: "donation-banner.png" %>
   <%= tag.meta name: "title", content: "Donation Page." %>
   <%= tag.meta name: "description", content: "Pixel Wave is an emerging blog, community and platform. This is a project that aims to create articles with topics like science, technology and hobbies." %>
 <% end %>
@@ -10,6 +11,8 @@
     Why should you donate?
   </h4>
 
+  <%= image_tag "donation-banner.png", alt: "Support Pixel Wave", class: "donation-banner" %>
+
   <p>
     Pixel Wave is an emerging blog, community and platform. This is a project that aims to create articles with topics like science, technology and hobbies. With your donation you help this platform to continue growing both technically and the number of users.
   </p>
@@ -19,6 +22,5 @@
   <form action="https://www.paypal.com/donate" method="post" target="_top">
     <input type="hidden" name="hosted_button_id" value="9N8D76MEZJCM2" />
     <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-    <img alt="" border="0" src="https://www.paypal.com/en_CO/i/scr/pixel.gif" width="1" height="1" />
   </form>
 </div>
