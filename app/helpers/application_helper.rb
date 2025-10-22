@@ -25,4 +25,12 @@ module ApplicationHelper
         date.strftime("%d %m %Y")
     end
   end
+
+  def low_quality_image_pill(image)
+    image.variant(format: :webp, resize_to_limit: [400, 400]) # Resize and reduce quality
+  end
+
+  def low_quality_image_thumb(image)
+    image.variant(format: :webp, resize_to_limit: [100, 100]) # Resize and reduce quality
+  end
 end
