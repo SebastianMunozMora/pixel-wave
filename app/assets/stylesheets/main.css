@@ -223,6 +223,7 @@ textarea {
         }
 
         img.donation-banner {
+            display: flex;
             justify-self: center;
             max-width: 100%;
 
