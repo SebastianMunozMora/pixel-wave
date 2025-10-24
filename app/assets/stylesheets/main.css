@@ -216,13 +216,15 @@ textarea {
 
     &.donation-page {
         padding: 15px;
-        max-width: 100%;
+        max-width: 500px;
 
         * {
             text-align: center;
         }
 
         img.donation-banner {
+            justify-self: center;
+            max-width: 100%;
 
             @media (width <= 900px) {
                 max-width: 370px;
