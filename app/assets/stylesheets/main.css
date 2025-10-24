@@ -41,6 +41,8 @@ a {
     img {
         object-fit: cover;
         max-width: 500px;
+        display: flex;
+        justify-self: center;
 
         @media (width <= 900px) {
             max-width: 300px;
