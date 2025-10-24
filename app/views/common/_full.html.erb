@@ -1,6 +1,6 @@
 <div id="<%= dom_id article %>" class="full">
 
-    <% if article.image.attached? %>
+    <% if article.image %>
         <div class="image-box">
             <%= image_tag(low_quality_image_pill(article.image), :class => "top-image", :size => '438x438', alt: article.image_caption || article.title || "Article Image", :loading => "lazy") %>
             <h6 class="caption"><%= fa_icon "camera-retro" %><%= article.image_caption || "" %></h6>

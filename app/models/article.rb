@@ -1,7 +1,7 @@
 require "date"
 class Article < ApplicationRecord
     belongs_to :author
-    has_one_attached :image
+    has_many_attached :images
     belongs_to :category
     validates :image_caption, length: { maximum: 255 }
 
@@ -20,7 +20,15 @@ class Article < ApplicationRecord
         "#{id}-#{title.parameterize}"
     end
 
+    def image
+        images.attached? ? images.first : nil
+    end
+
     def low_quality_image
-        image.variant(format: :webp, resize_to_limit: [400, 400]) # Resize and reduce quality
+        image&.variant(format: :webp, resize_to_limit: [400, 400]) if image.present?
+    end
+
+    def gallery_images
+        images.attached? ? images.drop(1) : nil
     end
 end

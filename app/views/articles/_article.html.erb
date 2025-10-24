@@ -14,7 +14,7 @@
         <%= link_to "#{article.title}", article %>
     </h1>
 
-    <% if article.image.attached? %>
+    <% if article.images %>
         <div class="image-box">
             <%= image_tag(article.low_quality_image, :class => "top-image", alt: article.image_caption || article.title || "Article image") %>
             <h6 class="caption"><%= fa_icon "camera-retro" %><%= article.image_caption %></h6>
