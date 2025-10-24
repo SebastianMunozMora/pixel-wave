@@ -216,9 +216,21 @@ textarea {
 
     &.donation-page {
         padding: 15px;
+        max-width: 500px;
+
+        * {
+            text-align: center;
+        }
 
         img.donation-banner {
-            max-width: 370px;
+
+            @media (width <= 900px) {
+                max-width: 370px;
+            }
+        }
+
+        form input[type="image"] {
+            width: 150px;
         }
     }
 }
