@@ -38,6 +38,11 @@
         Linux is one of the most valuable skills developers should have, not only because knowing how to properly use a terminal is vital, but also because many servers run in linux. 
     </p>
 
+    <% if gallery_images %>
+
+        <%= render "components/image-gallery", images: gallery_images %>
+    <% end %>
+
     <h5>Key Features</h5>
     <ul>
         <li>
