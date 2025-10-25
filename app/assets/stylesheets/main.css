@@ -94,6 +94,10 @@ a {
 
 @media (width <= 900px) {
 
+    img {
+        max-width: 370px;
+    }
+
     .top-banner, .search-bar {
         display: block;
         width: 100%;

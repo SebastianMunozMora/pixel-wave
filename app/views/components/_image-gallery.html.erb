@@ -1,13 +1,6 @@
-<%
-    images = [
-        {src: "img/picture1.png", caption: "game picture 1"},
-        {src: "img/picture2.png", caption: "game picture 2"},
-        {src: "img/picture3.png", caption: "game picture 3"}
-    ]
-%>
 
 <div class="image-gallery">
     <% for image in images %>
-        <%= render "/articles/templates/image-caption", src: image[:src], caption: image[:caption] %>
+        <%= render "components/image-caption", :src => url_for(image), :caption => image_caption_formatter(image.filename.to_s) || "article image" %>
     <% end %>
 </div>

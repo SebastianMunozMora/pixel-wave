@@ -1,6 +1,7 @@
 require "date"
 class Article < ApplicationRecord
     belongs_to :author
+    has_one_attached :image
     has_many_attached :images
     belongs_to :category
     validates :image_caption, length: { maximum: 255 }
@@ -18,10 +19,6 @@ class Article < ApplicationRecord
     # Ensure the title is URL-friendly
     def to_param
         "#{id}-#{title.parameterize}"
-    end
-
-    def image
-        images.attached? ? images.first : nil
     end
 
     def low_quality_image

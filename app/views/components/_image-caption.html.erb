@@ -1,9 +1,5 @@
-<%
-    src="img/src"
-    caption="image caption"
-%>
 
-<div class="image-<%= caption %>">
-    <img src="<%= src %>">
+<div class="image-caption image-<%= caption %>">
+    <img src="<%= src %>" alt="<%= caption %>">
     <blockquote><%= caption %></blockquote>
 </div>
