@@ -30,6 +30,6 @@ class Article < ApplicationRecord
     end
 
     def related_articles(limit = 5)
-        Article.where(category: category).where.not(id: id).limit(limit)
+        Article.visible.where(category: category).where.not(id: id).limit(limit)
     end
 end
