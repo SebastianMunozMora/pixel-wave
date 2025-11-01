@@ -1,5 +1,8 @@
 .related-articles {
-    max-width: 370px;
+
+    @media (width <= 900px) {
+        max-width: 370px;
+    }
 
     .related-articles-list {
         display: flex; /* Makes the list items align horizontally */
