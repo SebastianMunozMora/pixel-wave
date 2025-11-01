@@ -1,0 +1,10 @@
+<div class="related-articles">
+    <h3 class="related-articles-title">Related Articles</h3>
+    <ul class="related-articles-list">
+        <% related_articles.each do |article| %>
+            <li class="related-article-item">
+                <%= render "components/thumb", article: article %>
+            </li>
+        <% end %>
+    </ul>
+</div>

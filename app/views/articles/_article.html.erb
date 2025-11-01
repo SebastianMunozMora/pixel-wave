@@ -43,4 +43,8 @@
     <% if article.path.present? %>
         <%= render "article-paths/#{article.path}", gallery_images: article.images %>
     <% end %>
+
+    <% if article.related_articles.present? %>
+        <%= render "components/related-articles", related_articles: article.related_articles %>
+    <% end %>
 </div>

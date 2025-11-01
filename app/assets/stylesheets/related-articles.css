@@ -1,0 +1,26 @@
+.related-articles {
+    max-width: 370px;
+
+    .related-articles-list {
+        display: flex; /* Makes the list items align horizontally */
+        overflow-x: auto; /* Enables horizontal scrolling */
+        gap: 15px; /* Adds spacing between items */
+        padding: 10px; /* Adds padding inside the container */
+        list-style: none; /* Removes the default dots from list items */
+        scrollbar-width: thin; /* Optional: Makes the scrollbar thinner */
+        
+        .related-articles::-webkit-scrollbar {
+            height: 8px; /* Optional: Adjusts scrollbar height for WebKit browsers */
+        }
+        
+        .related-articles::-webkit-scrollbar-thumb {
+            background-color: #ccc; /* Optional: Customizes scrollbar color */
+            border-radius: 4px;
+        }
+        
+        .related-articles li {
+            flex: 0 0 auto; /* Prevents items from shrinking */
+            display: inline-block; /* Ensures items are treated as inline blocks */
+        }
+    }
+}

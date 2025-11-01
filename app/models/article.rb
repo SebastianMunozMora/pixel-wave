@@ -28,4 +28,8 @@ class Article < ApplicationRecord
     def gallery_images
         images.attached? ? images.drop(1) : nil
     end
+
+    def related_articles(limit = 5)
+        Article.where(category: category).where.not(id: id).limit(limit)
+    end
 end
