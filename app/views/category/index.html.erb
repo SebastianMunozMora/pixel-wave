@@ -7,7 +7,7 @@
         </div>
           <div class="vertical">
             <% category.articles.each do |article| %>
-              <%= render partial: "common/thumb", locals: { article: article, category: false } %>
+              <%= render partial: "components/thumb", locals: { article: article, category: false } %>
             <% end %>
           </div>
       <% end %>
