@@ -4,6 +4,10 @@
         margin-top: -40px;
     }
 
+    .image-box {
+        display: flex;
+    }
+
     .date-category-box {
         justify-self: left;
         .date-field {
