@@ -23,7 +23,7 @@
 
     <% if article.category %>
       <div class="category">
-        <%= article.category.name %>
+        <%= link_to article.category.name, "/category/#{article.category.name}" %>
       </div>
     <% end %>
   </div>
