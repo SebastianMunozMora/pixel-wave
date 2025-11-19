@@ -197,9 +197,11 @@ footer {
     flex-direction: column;
     display: flex;
     text-align: -webkit-center;
+    max-width: 370px;
 
     h1 {
-        font-size: 25px;
+        font-size: 2jjjjjjjjjkkkkkkkq5px;
+        margin: 5pxq;
     }
 
     .social-networks {

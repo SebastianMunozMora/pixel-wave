@@ -27,7 +27,7 @@ module ApplicationHelper
   end
 
   def low_quality_image_pill(image)
-    image.variant(format: :webp, resize_to_limit: [400, 400]) # Resize and reduce quality
+    image.blob && image.variant(format: :webp, resize_to_limit: [400, 400])# Resize and reduce quality
   end
 
   def low_quality_image_thumb(image)

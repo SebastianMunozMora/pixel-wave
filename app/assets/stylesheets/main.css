@@ -6,6 +6,10 @@
 @import url(_constants.css);
 @import url(_author.css);
 
+.notice, .alert {
+    display: contents;
+}
+
 a {
     text-decoration: none;
     color: inherit
