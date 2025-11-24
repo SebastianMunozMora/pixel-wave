@@ -1,6 +1,6 @@
 <article id="<%= dom_id article %>" class="thumb">
 
-  <% if article.image.blob %>
+  <% if article.image %>
     <%= link_to article, :class => "image-box" do %>
       <%= image_tag(low_quality_image_thumb(article.image), :class => "top-image", :size => '260x180', alt: article.image_caption || article.title ||"Article image", :loading => "lazy") %>
     <% end %>
