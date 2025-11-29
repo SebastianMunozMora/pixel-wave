@@ -2,7 +2,7 @@
 
   <% if article.image %>
     <%= link_to article.title, :class => "image-box" do %>
-      <%= image_tag(low_quality_image_thumb(article.image) || "place-holder-image",
+      <%= image_tag(low_quality_image_thumb(article.image) || "place-holder-image.png",
         :class => "top-image", alt: article.image_caption || article.title || "Article Image", :loading => "lazy") %>
     <% end %>
   <% end %>
