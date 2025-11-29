@@ -16,7 +16,6 @@
             <div class="arrow-right"></div>
             <%= link_to "#{article.category.name}", "/category/#{article.category.name}" %>
         </div>
-        -
         <div class="date-field">
             <%= link_to "#{formatted_date(article.created_at, "long")}", "/date/?current=#{article.created_at.to_date}" %>
         </div>

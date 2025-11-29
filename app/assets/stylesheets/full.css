@@ -11,7 +11,11 @@
     }
 
     .date-category-box {
+        display: flex;
         justify-self: left;
+        margin-bottom: 15px;
+        flex-direction: column;
+
         .date-field {
             a {
                 font-weight: lighter;
@@ -38,10 +42,6 @@
         border-bottom: 5px solid transparent;
         
         border-left: 10px solid;
-    }
-
-    .date-category-box {
-        margin-bottom: 15px;
     }
 
     .article-heading {
