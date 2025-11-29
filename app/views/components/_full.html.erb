@@ -1,8 +1,8 @@
 <article id="<%= dom_id article %>" class="full">
 
     <% if article.image %>
-        <%= link_to article, :class => "image-box" do %>
-            <%= image_tag(low_quality_image_pill(article.image) || "place-holder-image", :class => "top-image", :size => '438x438', alt: article.image_caption || article.title || "Article Image", :loading => "lazy") %>
+        <%= link_to article.title, :class => "image-box" do %>
+            <%= image_tag(low_quality_image_pill(article.image) || "place-holder-image", :class => "top-image", alt: article.image_caption || article.title || "Article Image", :loading => "lazy") %>
             <h6 class="caption"><%= fa_icon "camera-retro" %><%= article.image_caption || "" %></h6>
         <% end %>
     <% end %>

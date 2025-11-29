@@ -1,10 +1,11 @@
 <article id="<%= dom_id article %>" class="thumb">
 
   <% if article.image %>
-        <%= link_to article.title, :class => "image-box" do %>
-            <%= image_tag(low_quality_image_thumb(article.image || "place-holder-image") || "place-holder-image", :calass => "top-image", alt: article.image_caption || article.title || "Article Image", :loading => "lazy") %>
-        <% end %>
+    <%= link_to article.title, :class => "image-box" do %>
+      <%= image_tag(low_quality_image_thumb(article.image) || "place-holder-image",
+        :class => "top-image", alt: article.image_caption || article.title || "Article Image", :loading => "lazy") %>
     <% end %>
+  <% end %>
 
   <div class="text-box">
     <div class="article-heading">
