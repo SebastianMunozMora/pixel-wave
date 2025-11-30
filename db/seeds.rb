@@ -25,6 +25,8 @@
 # end
 
 # Add random dislikes to all articles
-Article.all.each do |article|
-  article.update(dislikes: 0) # Assign a random number of dislikes between 0 and 50
-end
+# Article.all.each do |article|
+#   article.update(dislikes: 0) # Assign a random number of dislikes between 0 and 50
+# end
+
+Category.create!([{ name: "music" }])
