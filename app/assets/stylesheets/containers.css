@@ -9,6 +9,7 @@
 
 @media (min-width: 768px) { 
     .vertical {
+        justify-items: center;
         width: min-content;
         width: 600px;
     }
@@ -143,10 +144,6 @@
 
 .category-list-view {
     justify-self: center;
-}
-
-.author-container {
-    display: inline-flex;
 }
 
 .author-info {
