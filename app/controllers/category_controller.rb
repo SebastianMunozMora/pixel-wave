@@ -1,13 +1,10 @@
 class CategoryController < ApplicationController
   def index
-    @networks = {
-      "LinkedIn" => "https://www.linkedin.com/in/sebastian-munoz-mora-70799863/",
-      "Facebook" => "https://www.facebook.com/SebastianMunozMora93/",
-      "Instagram" => "https://www.instagram.com/semm93/",
-    }
-    @authors = Author.all
-    @categories = Category.all
+    @category = Category.find_by(name: request.path.split("/")[-1]) || ""
 
+    if @category
+      @articles = searchArticles(params[:q], @category.articles.visible.order(created_at: :desc))
+    end
   end
 
   def video_games
@@ -40,7 +37,12 @@ class CategoryController < ApplicationController
     @category = Category.find_by(name: "entertainment")
     @articles = searchArticles(params[:q], @category.articles.visible.order(created_at: :desc))
   end
-  
+
+  def music
+    @category = Category.find_by(name: "music")
+    @articles = searchArticles(params[:q], @category.articles.visible.order(created_at: :desc))
+  end
+
   def science
     @category = Category.find_by(name: "science")
     @articles = searchArticles(params[:q], @category.articles.visible.order(created_at: :desc))

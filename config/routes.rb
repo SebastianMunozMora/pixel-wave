@@ -28,6 +28,7 @@ Rails.application.routes.draw do
   get 'category/lifestyle'
   get 'category/series'
   get 'category/', to: 'category#index', as: 'category'
+  get 'category/music', to: 'category#index', as: 'music'
   get 'custom_article/index'
   get 'morse_interpreter/index'
   get 'test/index'
