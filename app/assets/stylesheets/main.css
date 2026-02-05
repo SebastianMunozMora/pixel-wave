@@ -90,7 +90,7 @@ a {
 
             input {
                 background: var(--theme-gradient);
-                color: var(--gray-100);
+                color: var(--gray-600);
             }
         }
     }
