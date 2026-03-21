@@ -140,3 +140,6 @@ ul.glossary {
     }
 }
 
+.columns.reactions {
+    justify-content: end;
+}
