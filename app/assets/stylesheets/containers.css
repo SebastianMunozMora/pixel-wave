@@ -147,7 +147,9 @@
 }
 
 .author-info {
-    width: 33%;
+    @media (width > 900px) {
+        width: 33%;
+    }
 }
 
 
