@@ -24,8 +24,8 @@
             }
 
             .article-heading {
-                max-height: 35px;
-                overflow: scroll;
+                max-height: 30px;
+                overflow: hidden;
             }
 
             .date-author-field {
