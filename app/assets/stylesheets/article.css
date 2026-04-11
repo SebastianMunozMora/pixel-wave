@@ -3,6 +3,11 @@
     justify-self: right;
 }
 
+
+.full .image-box {
+    width: 440px;
+}
+
 .image-box {
     border: 1px solid grey;
     padding: 5px;
@@ -11,7 +16,7 @@
     justify-self: center;
     margin-bottom: 15px;
     width: fit-content;
-    max-width: 370px;
+    max-width: 440px;
 }
 
 .image-box-thumb {
