@@ -4,8 +4,11 @@
 }
 
 
-.full .image-box {
-    width: 440px;
+@media (width > 900px) {
+    .full .image-box {
+        max-width: 440px;
+        width: 440px;
+    }
 }
 
 .image-box {
@@ -16,7 +19,7 @@
     justify-self: center;
     margin-bottom: 15px;
     width: fit-content;
-    max-width: 440px;
+    max-width: 370px;
 }
 
 .image-box-thumb {
