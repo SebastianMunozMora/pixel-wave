@@ -5,6 +5,9 @@
 
 
 @media (width > 900px) {
+    .desktop-view {
+        display: flex;
+    }
     .full .image-box {
         max-width: 440px;
         width: 440px;
