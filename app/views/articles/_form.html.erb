@@ -37,9 +37,9 @@
     <%= form.text_area :image_caption %>
   </div>
 
-  <%= form.select :author_id, options_from_collection_for_select(Author.all, :id, :name, article.author) %>
+  <%= form.select :author_id, options_from_collection_for_select(Author.all, :id, :name, article.author_id) %>
 
-  <%= form.select :category_id, options_from_collection_for_select(Category.all, :id, :name, article.category) %>
+  <%= form.select :category_id, options_from_collection_for_select(Category.all, :id, :name, article.category_id) %>
 
   <div>
     <%= form.label :body, "Body", style: "display: block" %>
