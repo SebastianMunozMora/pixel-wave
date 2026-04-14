@@ -7,6 +7,14 @@
 @media (width > 900px) {
     .desktop-view {
         display: flex;
+        justify-content: space-around;
+    }
+    .desktop-column {
+        padding: 0 5px;
+        width: 30%;
+    }
+    .article-excerpt {
+        margin: 15px 0;
     }
     .full .image-box {
         max-width: 440px;
