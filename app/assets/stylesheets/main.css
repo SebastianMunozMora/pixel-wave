@@ -197,10 +197,6 @@ textarea {
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
-
-    &.article-columns {
-        width: 70%;
-    }
 }
 
 .reversed {
