@@ -6,6 +6,7 @@
     border-radius: 5px;
     .image-box {
         flex-basis: fit-content;
+        align-content: center;
         img {
             max-width: 100px;
             max-height: 100px;
