@@ -19,6 +19,8 @@
     .full .image-box {
         max-width: 440px;
         width: 440px;
+        height: 500px;
+        justify-content: center;
     }
 }
 
@@ -31,6 +33,11 @@
     margin-bottom: 15px;
     width: fit-content;
     max-width: 370px;
+
+    &.main-article-image {
+        height: 500px;
+        align-content: center;
+    }
 }
 
 .image-box-thumb {
