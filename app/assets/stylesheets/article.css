@@ -73,6 +73,9 @@
     display: flex;
     justify-self: center;
     color: rgb(137, 137, 137);
+    i {
+        padding: 2px 5px;
+    }
 }
 
 .author {
