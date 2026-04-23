@@ -7,6 +7,7 @@
     .image-box {
         flex-basis: fit-content;
         align-content: center;
+        height: 100px;
         img {
             max-width: 100px;
             max-height: 100px;
